@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout4</title>
+    <style>
+      p {
+        width: 300px;
+        height: 200px;
+        background-color: aliceblue;
+        border: 1px solid #ff0000;
+      }
+
+      #static {
+        position: static;
+      }
+
+      #p1 {
+        position: relative;
+      }
+
+      #p2 {
+        position: relative;
+        left: 100px;
+        top: -100px;
+      }
+
+      #p3 {
+        position: fixed;
+        width: 200px;
+        right: 100px;
+        bottom: 50px;
+        background-color: chocolate;
+      }
+
+      div {
+        margin: 0px;
+        padding: 0px;
+        width: 980px;
+        height: 600px;
+        border: 1px dotted gray;
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p id="static">static</p>
+      <p id="p1">
+        ★공식몰단독 괄사리프팅세럼 (40ml) 대용량★ 여름 최대 61% 7월
+        특가★공식몰단독 괄사리프팅세럼 (40ml) 대용량★ 여름 최대 61% 7월
+        특가★공식몰단독 괄사리프팅세럼 (40ml) 대용량★ 여름 최대 61% 7월
+        특가★공식몰단독 괄사리프팅세럼 (40ml) 대용량★ 여름 최대 61% 7월
+        특가★공식몰단독 괄사리프팅세럼 (40ml) 대용량★ 여름 최대 61% 7월 특가
+      </p>
+      <p id="p2">
+        ★안티에이징 부문1위★ 2주만에 팔자주름 23%개선★안티에이징 부문1위★
+        2주만에 팔자주름 23%개선★안티에이징 부문1위★ 2주만에 팔자주름
+        23%개선★안티에이징 부문1위★ 2주만에 팔자주름 23%개선★안티에이징 부문1위★
+        2주만에 팔자주름 23%개선★
+      </p>
+      <p id="p3">
+        36,000원 19,000원36,000원 19,000원36,000원 19,000원36,000원
+        19,000원36,000원 19,000원36,000원 19,000원36,000원 19,000원36,000원
+        19,000원36,000원 19,000원36,000원 19,000원36,000원 19,000원36,000원
+        19,000원36,000원 19,000원
+      </p>
+    </div>
+  </body>
+</html>
+
+<!-- static : 문서의 흐름에 맞춰 배치 (default) relative : 위칫값을 지정할 수 있다는
+점을 제외하면 static과 같음 absolute : relative값을 사용한 상위 요소를 기준으로
+위치를 지정해 배치 fixed : 브라우저 창을 기준으로 지정해 배치 -->
+
+<!-- 월요일 시험 -->
