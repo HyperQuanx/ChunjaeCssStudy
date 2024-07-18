@@ -25,28 +25,42 @@
         border-style: dotted;
       }
 
+      .box {
+        border: 1px solid red;
+        margin: 0;
+        border-radius: 10%;
+      }
+
+      .box2 {
+        border: 1px solid blue;
+        margin: 0;
+        border-radius: 50%;
+      }
+
       #box1 {
-        border: 1px red;
-        border-style: solid;
         margin: 10px 15px;
         padding: 10px;
         width: 200px;
       }
+
       #box2 {
         border-style: dotted;
         margin: 10px 15px 10px 15px;
         padding: 20px;
+        border-radius: 25px;
       }
+
       #box3 {
         border-style: dashed;
         margin: 0px;
         padding: 30px;
       }
-      #box1 {
-        border: 2px solid orange;
-        width: 400px;
-        margin: 0;
-        padding: 0;
+      #b1 {
+        border: 1px solid orange;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin: 10px;
+        padding: 30px;
       }
     </style>
   </head>
@@ -62,11 +76,18 @@
     </div>
     <p>박스 모델의 사용법에 대하여 알아보겠습니다.</p> -->
     <p class="first">p태그의 박스모델</p>
+
     <p class="second">p태그의 박스모델</p>
-    <div id="box1">박스모델의 실선 테두리</div>
-    <div id="box2">박스모댈의 파선 테두리</div>
+
+    <div id="box1" class="box box2">박스모델의 실선 테두리</div>
+
+    <div id="box2" class="box box1">박스모델의 파선 테두리</div>
+
     <div id="box3">박스모델의 점선 테두리</div>
+
+    <div id="b1" class="box2" style="width: 100px; height: 100px"></div>
   </body>
 </html>
 
 <!-- span 태그는 인라인블럭이기 때문에 width를 바꿀 수 없다 -->
+<!-- id가 같을 경우 뒤에 선언한 내용대로 적용됨. -->
