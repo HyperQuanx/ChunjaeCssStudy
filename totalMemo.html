@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>스타일 기본</h1>
+    <div>스타일 적용 순위 : 캐스케이딩</div>
+    <div>
+      !important > 인라인 스타일 > id 스타일 > 클래스 스타일 > 타입 스타일
+    </div>
+    <div>나중에 작성한 스타일이 먼저 작성한 스타일을 덮어씌움</div>
+    <div>글자와 관련된 속성</div>
+    <div style="font-family: 'Courier New', Courier, monospace">
+      font-family : 글꼴 종류 지정
+    </div>
+    <div style="font-size: 30px">font-size : 글자 크기 지정</div>
+    <div style="font-style: italic">font-style : 글자 스타일 지정</div>
+    <div style="font-weight: bold">font-weight : 글자 굵기 지정</div>
+    <div style="color: red">color : 글자 색 지정</div>
+    <div style="text-decoration: dotted">
+      text-decoration : 텍스트 밑줄이나 취소선 표시할지 여부 지정
+    </div>
+    <div style="text-transform: uppercase">
+      text-transform : 텍스트 전체, 또는 첫 글자를 대문자로 표시
+    </div>
+    <div style="text-shadow: springgreen">text-shadow : 텍스트 그림자 추가</div>
+    <div style="letter-spacing: 10px">
+      letter-spacing : 글자 사이의 간격 지정
+    </div>
+    <div style="word-spacing: 10px">word-spacing : 단어 사이의 간격 지정</div>
+    <div style="text-align: center">text-align : 텍스트 정렬 방법 지정</div>
+    <div style="line-height: 10px">line-height : 줄 간격 조절</div>
+    <div style="color: #666666">
+      웹 색상 지정은 16진수 방법을 가장 많이 씀 16진수 > RGBA > 색상 이름
+    </div>
+    <div
+      style="
+        width: 200px;
+        background-color: orange;
+        height: 200px;
+        box-sizing: inherit;
+        box-shadow: royalblue;
+      "
+    >
+      width : 박스 모델 너비, height : 박스 모델 높이, box-sizing : 박스 모델
+      크기 계산하는 기준 지정, box-shadow : 박스 모델에 그림자 효과 추가
+    </div>
+    <div style="border: 1px solid black">
+      border 관련 속성은 대부분 한번에 적으니 안 나누고 한번에 첨삭 radius 는
+      둥글게, color는 색상 지정
+    </div>
+    <div style="margin-top: 100px; padding: 10px">margin, padding도 스킵.</div>
+    <div
+      style="
+        background-image: url(https://cdn.filepicker.io/api/file/4XNqriWaTAqdsIo7hIWq);
+        width: 200px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: contain;
+      "
+    ></div>
+    <div style="display: block">
+      display : 화면에 요소 배치 방법 지정. 자주 사용하는 주요 속성으로는 block,
+      inline, inline-block, none, flex 등
+    </div>
+    <div style="position: relative">
+      position : relative, absolute, fixed 중요하니 layout.html,
+      positionUnderstand.html 참조
+    </div>
+    <div>위치는 top, bottom, left, right로 변경</div>
+    <div>background 관련 속성과 태그는 bg1~bg7 참조</div>
+    <div>매우 상세히 나와있음</div>
+  </body>
+</html>
