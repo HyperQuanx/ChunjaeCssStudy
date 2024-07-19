@@ -1,3 +1,3 @@
 # ChunjaeCssStudy
 
-<div>`  `</div>
+bg -> bg7까지
