@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 클래스</title>
+    <style>
+      a {
+        display: block;
+        text-decoration: none;
+      }
+
+      a:link {
+        /* 가상 클래스*/
+        color: orange;
+      }
+
+      a:visited {
+        /* 가상 클래스*/
+        color: green;
+      }
+
+      p:hover,
+      a:hover,
+      ul > li:hover {
+        color: red;
+      }
+
+      button:active {
+        color: aquamarine;
+        width: 100px;
+        float: left;
+      }
+
+      input:focus {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.naver.com" target="_blank">네이버</a>
+    <a href="https://www.daum.net" target="_blank">다음</a>
+    <a href="https://www.google.com" target="_blank">구글</a>
+    <p>마우스를 올려주세요</p>
+    <ul>
+      <li>리스트1</li>
+      <li>리스트2</li>
+      <li>리스트3</li>
+    </ul>
+    <br />
+    <button>active</button>
+
+    <br />
+    <input />
+  </body>
+</html>
