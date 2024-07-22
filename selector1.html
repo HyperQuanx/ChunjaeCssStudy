@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>선택자</title>
+    <style></style>
+  </head>
+  <body>
+    <ol>
+      <li>
+        기본 선택자
+        <ol>
+          <li>전체 선택자</li>
+          <li>
+            <ul>
+              <li>- 형식 : * { /* CSS 코드 */ }</li>
+            </ul>
+          </li>
+          <li>
+            타입(태그) 선택자
+            <ul>
+              <li>태그명으로 선택자 지정</li>
+              <li>형식 : 태그명 { /* CSS 코드 */ }</li>
+            </ul>
+          </li>
+          <li>
+            아이디 선택자
+            <ul>
+              <li>id 속성값(아이디명)으로 선택자 지정</li>
+              <li>형식 : #id명 { /* CSS 코드 */ }</li>
+            </ul>
+          </li>
+          <li>
+            클래스 선택자
+            <ul>
+              <li>class 속성(클래스명)으로 선택자 지정</li>
+              <li>형식 : .class명 { /* CSS 코드 */ }</li>
+            </ul>
+          </li>
+          <li>기본 속성 선택자</li>
+          <li>문자열 속성 선택자</li>
+        </ol>
+      </li>
+      <li>
+        조합(연결) 선택자
+        <ul>
+          <li>선택자와 선택자를 연결해 적용하여 대상을 제한</li>
+          <li>combination selector(조합 선택자)</li>
+        </ul>
+      </li>
+
+      <li>그룹 선택자</li>
+      <ul>
+        <li>여러 선택자를 콤마(,)를 사용하여 그룹으로 묶어서 지정</li>
+        <li>형식 : 선택자1, 선택자2,,,,,, 선택자n { /* CSS 코드 */ }</li>
+      </ul>
+      <li>
+        자식 선택자(child selector)
+        <ol>
+          <li>자식 요소에 스타일을 적용</li>
+          <li>선택자 범위를 자식 관계로 제한</li>
+          <li>두 요소 사이에 >(부등호)를 이용하여 부모와 자식을 구분</li>
+          <li>형식 : 부모 선택자 > 자식 선택자 { /* CSS 코드 */ }</li>
+        </ol>
+      </li>
+      <li>
+        하위 선택자(descendant selector)
+        <ul>
+          <li>선택자 범위를 자식 및 자손 관계로 제한</li>
+          <li>부모 요소에 포함된 모든 하위 요소에 스타일 적용</li>
+          <li>형식 : 상위 선택자 하위 선택자</li>
+          <li>형식 : 선택자1 선택자2 선택자3,,,,{ /* CSS 코드 */ }</li>
+        </ul>
+      </li>
+      <li>
+        인접 형제 선택자(adjacent selector)
+        <ul>
+          <li>특정 태그와 가장 인접한 형제 관계 태그를 선택자로 지정</li>
+          <li>같은 부모를 가진 형제 요소 중에서 첫 번째 동생 요소에만 적용</li>
+          <li>
+            요소1과 요소2는 같은 레벨이면서 요소1 이후 첫 번째 요소2에 적용
+          </li>
+          <li>구분자 : +</li>
+          <li>형식 : 이전 선택자 + 대상 선택자 { /* CSS 코드 */ }</li>
+        </ul>
+      </li>
+      <li>
+        일반 형제 선택자(sibling selector)
+        <ul>
+          <li>특정 태그와 형제 관계에 오는 모든 태그를 선택자로 지정</li>
+          <li>형제 요소들에 스타일 적용</li>
+          <li>인접 형제 선택자와 다르게 모든 형제 요소에 적용</li>
+          <li>구분자 : ~</li>
+          <li>형식 : 이전 선택자 ~ 대상 선택자 { /* CSS 코드 */ }</li>
+        </ul>
+      </li>
+    </ol>
+  </body>
+</html>
