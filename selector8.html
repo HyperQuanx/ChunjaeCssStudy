@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>속성 선택자</title>
+    <style>
+      ul {
+        list-style-type: none;
+      }
+      li {
+        display: inline-block;
+        margin: 10px;
+        border: 1px solid red;
+      }
+      li a {
+        padding: 4px 10px 4px 20px;
+        font-size: 18px;
+        color: blue;
+        text-decoration: none;
+      }
+      a[title^="f"] {
+        background: url(apple.png) no-repeat left center;
+        padding: 4px 10px 4px 20px;
+      }
+      a[title^="p"] {
+        background: url(cat-jump-happy-happy-happy.gif) no-repeat left center;
+        padding: 4px 20px;
+        text-align: right;
+      }
+      a[href$="hwp"] {
+        background: url(email_542689.png) no-repeat right center;
+        background-size: contain;
+        padding-right: 40px;
+      }
+      a[href$="xsl"] {
+        background: url(free-icon-github-11376339.png) no-repeat right center;
+        background-size: contain;
+        padding-right: 40px;
+      }
+      a[href$="pdf"] {
+        background: url(free-icon-instagram-logo-87390.png) no-repeat right
+          center;
+        background-size: contain;
+        padding-right: 40px;
+      }
+      a[href*="www"] {
+        background: blue;
+        color: aquamarine;
+      }
+      a[href*="net"] {
+        font-weight: bold;
+      }
+      a[href*="co.kr"] {
+        font-style: italic;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      [속성^=값] 선택자
+      <!-- 시작 값 -->
+    </h1>
+    <ul>
+      <li>과일</li>
+      <li><a href="#" title="fruits-apple>">사과</a></li>
+      <li><a href="#" title="fruits-banana>">바나나</a></li>
+      <li><a href="#" title="fruits-strawberry>">딸기</a></li>
+      <li><a href="#" title="pineapple>">파인애플</a></li>
+    </ul>
+
+    <h1>
+      [속성$=값] 선택자
+      <!-- 마지막 값 -->
+    </h1>
+    <ul>
+      <li><a href="첨부파일.hwp" title="한글파일명">hwp 파일</a></li>
+      <li><a href="첨부파일.xsl" title="엑셀파일명">엑셀 파일</a></li>
+      <li><a href="첨부파일.pdf" title="PDF">pdf 파일</a></li>
+    </ul>
+
+    <h1>[속성*=값] 선택자</h1>
+    <ul>
+      <li><a href="https://www.daum.net">다음</a></li>
+      <li><a href="https://www.naver.co.kr">네이버</a></li>
+      <li><a href="https://www.google.com">구글</a></li>
+    </ul>
+  </body>
+</html>
