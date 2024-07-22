@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>속성 선택자</title>
+    <style>
+      ul {
+        list-style-type: none;
+      }
+      li {
+        display: inline-block;
+        margin: 10px;
+      }
+      li a {
+        padding: 4px 20px;
+        font-size: 16px;
+        color: blue;
+        text-decoration: none;
+      }
+      a[title|="menu1"] {
+        background: url(apple.png) no-repeat left center;
+      }
+      a[title|="menu2"] {
+        background: url(free-icon-fruits-1625048.png) no-repeat left center;
+        background-size: 20px;
+      }
+      a[title|="menu3"] {
+        background: url(cat-jump-happy-happy-happy.gif) no-repeat left center;
+        background-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>[속성 |= 값] 선택자</h1>
+    <ul>
+      <li>전체 메뉴</li>
+      <li><a href="#" title="menu1">메뉴 1</a></li>
+      <li><a href="#" title="menu2">메뉴 2</a></li>
+      <li><a href="#" title="menu3">메뉴 3</a></li>
+      <li><a href="#" title="menu3-1">메뉴 4</a></li>
+    </ul>
+  </body>
+</html>
