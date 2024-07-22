@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .link:link {
+        background-color: red;
+      }
+      .visited:visited {
+        background-color: blue;
+      }
+      .hover:hover {
+        background-color: orange;
+        color: white;
+      }
+      .active:active {
+        background-color: orange;
+        color: white;
+      }
+      .focus:focus {
+        background-color: orange;
+        color: white;
+      }
+      #qwe:target {
+        color: red;
+      }
+      .enabled:enabled {
+        background-color: rgb(165, 165, 165);
+      }
+      .disabled:disabled {
+        background-color: aqua;
+      }
+      .checked:checked {
+        margin-left: 10px;
+      }
+      .not:not(p) {
+        background-color: azure;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <a class="link" href="https://www.naver.com" target="_blank">link</a>
+      <a class="visited" href="https://www.naver.com" target="_blank"
+        >visited</a
+      >
+      <a class="hover" href="https://www.naver.com" target="_blank">hover</a>
+      <a class="active" href="https://www.naver.com" target="_blank">active</a>
+      <a class="focus" href="https://www.naver.com" target="_blank">focus</a>
+      <a href="#qwe">target</a>
+      <input class="enabled" placeholder="enabled" />
+      <input class="disabled" placeholder="disabled" />
+      <input type="checkbox" class="checked" />
+      <input type="text" class="not" />
+    </div>
+    <div id="qwe">
+      <p>asdds</p>
+    </div>
+  </body>
+</html>
