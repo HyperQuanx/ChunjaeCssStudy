@@ -3,7 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>연결 선택자</title>
+    <title>그룹 선택자</title>
+    <style>
+      p,
+      #title,
+      .red {
+        color: red;
+      }
+
+      .box > p {
+        color: blue;
+      }
+
+      #div1 > p {
+        color: yellow;
+      }
+
+      div > p {
+        color: purple;
+      }
+
+      div p {
+        color: red;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <p>red</p>
+    <p>blue</p>
+    <p>blue + red</p>
+
+    <div id="div1" class="box">
+      <p>자식1 p태그</p>
+      <div>자식2 div태그</div>
+      <p>자식3 p태그</p>
+    </div>
+
+    <h1>하위 선택자</h1>
+    <div>
+      <p>자식1 p태그</p>
+      <div>
+        <p>자식2 div태그 > p태그</p>
+      </div>
+      <p>자식3 p태그</p>
+      <ul>
+        <li><p>자식4 > p태그</p></li>
+        <li><p>자식5 > p태그</p></li>
+      </ul>
+    </div>
+  </body>
 </html>

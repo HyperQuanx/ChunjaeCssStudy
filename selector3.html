@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연결 선택자</title>
+    <style>
+      body {
+        color: orange;
+      }
+
+      h2 {
+        color: blue;
+      }
+
+      h1 + h2 {
+        color: red;
+      }
+
+      h3 + p {
+        color: red;
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>인접 형제 선택자(adjacent selector)</h1>
+    <h2>h2 형제5 선택자</h2>
+    <div>
+      <h2>h2 형제1 선택자</h2>
+      <h2>h2 형제2 선택자</h2>
+      <h2>h2 형제3 선택자</h2>
+    </div>
+    <h2>h2 형제4 선택자</h2>
+
+    <h3>상품 금액</h3>
+    <p>오프라인 판매 금액 : 50,000원</p>
+    <p>온라인 판매 금액 : 35,000원</p>
+
+            
+  </body>
+</html>
+
+<!-- 인접 형제 선택자는 부모가 같은 레벨이어야 하고 바로 옆에 붙어야 함. -->
