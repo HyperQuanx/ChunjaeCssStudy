@@ -5,35 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      /* div {
-        width: 100px;
-        height: 100px;
-        border-color: red;
+      #div3 {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
         animation-name: bgchange;
-        animation-duration: 5s;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+        animation-delay: 1s;
+        animation-iteration-count: 3;
       }
 
       @keyframes bgchange {
         0% {
           background-color: red;
         }
-        25% {
-          background-color: rgb(0, 255, 13);
-        }
         50% {
-          background-color: rgb(88, 74, 212);
+          background-color: yellow;
         }
         100% {
-          background-color: rgb(161, 118, 190);
+          background-color: green;
         }
-      } */
-
-      #container {
-        width: 400px;
-        margin: 20px auto;
       }
 
-      .div {
+      .div1 {
         width: 100px;
         height: 100px;
         float: left;
@@ -41,45 +36,45 @@
       }
 
       #div1 {
-        background-color: aquamarine;
+        background-color: chartreuse;
         border: 1px solid transparent;
-        animation-name: shape;
+        animation-name: div1;
         animation-duration: 3s;
+        animation-iteration-count: infinite;
       }
 
       #div2 {
         background-color: violet;
         border: 1px solid transparent;
-        animation-name: rotate;
+        animation-name: div2;
         animation-duration: 3s;
+        animation-iteration-count: infinite;
       }
-
-      @keyframes shape {
+      @keyframes div1 {
         from {
           border: 1px solid transparent;
         }
         to {
-          border: 1px solid black;
+          border: 1px solid #000;
           border-radius: 50%;
         }
       }
-
-      @keyframes rotate {
+      @keyframes div2 {
         from {
           transform: rotate(0deg);
         }
         to {
-          transform: rotate(45deg);
+          transform: rotate(360deg);
         }
       }
     </style>
   </head>
   <body>
-    <!-- <div></div> -->
-
+    <h1>interation-count</h1>
     <div id="container">
-      <div class="div" id="div1"></div>
-      <div class="div" id="div2"></div>
+      <div class="div1" id="div1"></div>
+      <div class="div2" id="div2"></div>
+      <div class="div3" id="div3"></div>
     </div>
   </body>
 </html>
