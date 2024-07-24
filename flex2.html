@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        background-color: gray;
+        border: 1px solid #222;
+        margin-bottom: 20px;
+        color: white;
+      }
+
+      .flex-items {
+        padding: 10px 40px;
+        margin: 5px;
+        width: 80px;
+        background-color: #222;
+      }
+
+      #cont1 {
+        /* flex-direction: row;
+        flex-wrap: nowrap; */
+        flex-flow: row wrap;
+      }
+      #cont2 {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+      }
+      #cont3 {
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      #cont4 {
+        flex-direction: column-reverse;
+        flex-wrap: wrap-reverse;
+      }
+      #cont5 {
+        justify-content: flex-start;
+      }
+      #cont6 {
+        justify-content: flex-end;
+      }
+      #cont7 {
+        justify-content: center;
+      }
+      #cont8 {
+        align-items: flex-start;
+      }
+      #cont9 {
+        align-items: flex-end;
+      }
+      #cont10 {
+        align-items: center;
+      }
+      #cont11 {
+        align-items: center;
+        height: 200px;
+      }
+      #items1 {
+        align-self: flex-start;
+      }
+      #items2 {
+        align-self: flex-end;
+      }
+      #items3 {
+        align-self: stretch;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="cont1">
+      <div class="flex-items"><p>글내용1</p></div>
+      <div class="flex-items"><p>글내용2</p></div>
+      <div class="flex-items"><p>글내용3</p></div>
+    </div>
+    <div class="container" id="cont2">
+      <div class="flex-items"><p>글내용1</p></div>
+      <div class="flex-items"><p>글내용2</p></div>
+      <div class="flex-items"><p>글내용3</p></div>
+    </div>
+    <div class="container" id="cont3">
+      <div class="flex-items"><p>글내용1</p></div>
+      <div class="flex-items"><p>글내용2</p></div>
+      <div class="flex-items"><p>글내용3</p></div>
+    </div>
+    <div class="container" id="cont4">
+      <div class="flex-items"><p>글내용1</p></div>
+      <div class="flex-items"><p>글내용2</p></div>
+      <div class="flex-items"><p>글내용3</p></div>
+    </div>
+    <div class="container" id="cont5">
+      <div class="flex-items"><p>글내용1</p></div>
+      <div class="flex-items"><p>글내용2</p></div>
+      <div class="flex-items"><p>글내용3</p></div>
+    </div>
+    <div class="container" id="cont6">
+      <div class="flex-items"><p>글내용1</p></div>
+      <div class="flex-items"><p>글내용2</p></div>
+      <div class="flex-items"><p>글내용3</p></div>
+    </div>
+    <div class="container" id="cont7">
+      <div class="flex-items"><p>글내용1</p></div>
+      <div class="flex-items"><p>글내용2</p></div>
+      <div class="flex-items"><p>글내용3</p></div>
+    </div>
+    <div class="container" id="cont8">
+      <div class="flex-items"><p>글내용1</p></div>
+      <div class="flex-items"><p>글내용2</p></div>
+      <div class="flex-items"><p>글내용3</p></div>
+    </div>
+    <div class="container" id="cont9">
+      <div class="flex-items"><p>글내용1</p></div>
+      <div class="flex-items"><p>글내용2</p></div>
+      <div class="flex-items"><p>글내용3</p></div>
+    </div>
+    <div class="container" id="cont10">
+      <div class="flex-items"><p>글내용1</p></div>
+      <div class="flex-items"><p>글내용2</p></div>
+      <div class="flex-items"><p>글내용3</p></div>
+    </div>
+    <div class="container" id="cont11">
+      <div class="flex-items" id="items1"><p>글내용1</p></div>
+      <div class="flex-items" id="items2"><p>글내용2</p></div>
+      <div class="flex-items" id="items3"><p>글내용3</p></div>
+    </div>
+  </body>
+</html>
