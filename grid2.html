@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css 그리드</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-rows: 100px 100px;
+        grid-template-columns: 100px 100px;
+        /* row-gap: 10px;
+        column-gap: 10px;
+        align-items: start;
+        justify-items: center; */
+        /* grid-template-areas:
+          "header header header header"
+          "sidebar content content content"
+          "footer footer footer footer"; */
+      }
+
+      .grid-item {
+        color: black;
+        background-color: bisque;
+        /* border: 1px solid black; */
+        /* margin: 2px; */
+      }
+
+      .grid-item:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      .grid-item:nth-child(2) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+      }
+
+      .grid-item:nth-child(3) {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background-color: orange;
+      }
+
+      .grid-item:nth-child(4) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background-color: blue;
+      }
+
+      /* #header {
+        grid-area: header;
+      }
+
+      #sidebar {
+        grid-area: sidebar;
+      }
+
+      #content {
+        grid-area: content;
+      }
+
+      #footer {
+        grid-area: footer;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>Css 그리드 레이아웃</h1>
+
+    <div class="grid-container">
+      <div id="header" class="grid-item">1</div>
+      <div id="sidebar" class="grid-item">2</div>
+      <div id="content" class="grid-item">3</div>
+      <div id="footer" class="grid-item">4</div>
+    </div>
+  </body>
+</html>
