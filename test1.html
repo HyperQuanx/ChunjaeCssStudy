@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        font-size: 5vw;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>미디어 쿼리</h1>
+    <ol>
+      <li>
+        미디어 쿼리 구문
+        <ul>
+          <li>@media 속성을 사용</li>
+          <li>적용할 미디어 대상 지정</li>
+          <li>적용할 css를 지정</li>
+          <li>style태그 사이에 정의</li>
+          <li>
+            형식 : @media [not|only] 미디어타입 [and 조건] * [and 조건] { /* css
+            코드 */ }
+          </li>
+          <li>
+            속성값
+            <ul>
+              <li>not : 다음에 지정하는 미디어타입을 제외</li>
+              <li>only : 미디어 쿼리를 지원하지 않는 웹 브라우저에서는 무시</li>
+              <li>and : 여러 개를 연결하여 추가 가능</li>
+            </ul>
+          </li>
+          <li>
+            미디어 유형
+            <ul>
+              <li>all : 지원하는 모든 미디어</li>
+              <li>print : 인쇄 장치에서 사용할 css 정의</li>
+              <li>
+                screen : 컴퓨터 스크린과 같은 모니터 스크린, 스마트폰 포함
+              </li>
+              <li>tv : TV</li>
+              <li>aural : 음성 신호 장치(TTS 같은 장비들)</li>
+              <li>braille : 점자 표시 장치</li>
+              <li>handheld : 패드같은 이동성 장치</li>
+              <li>projection : 프로젝트 같은 장비</li>
+              <li>tty : 디스플레이 기능이 성능이 낮은 장비들</li>
+              <li>embossed : 점자 프린터</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        웹 문서 기준 가로/세로
+        <ul>
+          <li>실제 웹 문서 내용이 표현되는 영역의 가로/세로</li>
+          <li>width, height</li>
+          <li>
+            min-width, min-height --> 브라우저 사이즈에 대해 컨텐츠가 노출
+            영역의 변동 최저 값
+          </li>
+          <li>max-width, max-height --> 디바이스 구분 용도</li>
+          <li>
+            @media screen and (min-width:1440px) { /* css 코드 */ }
+            <br />
+            너비가 최소 1440px인 화면에서 플레이 되는 스타일
+          </li>
+        </ul>
+      </li>
+      <li>
+        단말기 기준
+        <ul>
+          <li>단말기 해상도와 실제 브라우저의 너비가 다름</li>
+          <li>device-width, device-height</li>
+          <li>min-device-width, min-device-height</li>
+          <li>max-device-width, max-device-height</li>
+          <li>
+            @media screen and (min-device-width:380px) and
+            (min-device-height:812px) { /* css 코드 */ }
+          </li>
+        </ul>
+      </li>
+      <li>
+        화면 회전 기준
+        <ul>
+          <li>orientation : portrait - 단말기 세로모드</li>
+          <li>orientation : landscape - 단말기 가로모드</li>
+        </ul>
+      </li>
+    </ol>
+  </body>
+</html>

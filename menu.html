@@ -6,22 +6,48 @@
     <title>qwer</title>
     <style>
       .subMenu {
-        padding: 0px 20px;
+        text-align: center;
+        padding: 0;
       }
       .mainMenu {
         border: 1px solid black;
         display: inline-block;
         cursor: pointer;
         text-align: center;
+        position: relative;
+        width: 150px;
+        margin-right: 50px;
       }
       .subMenu {
-        position: relative;
-        border: 1px solid black;
+        position: absolute;
+        opacity: 0;
         list-style-type: none;
+        width: 150px;
+        color: black;
+        border: 1px solid black;
+        bottom: 50px;
       }
       .mainMenu:hover > .subMenu {
-        transform: translateY(200px);
-        transition-duration: 2s;
+        color: black;
+        border: 1px solid black;
+        transform: translateY(120px);
+        transition-duration: 0.5s;
+        animation-name: light;
+        animation-duration: 0.5s;
+      }
+      @keyframes light {
+        0% {
+          opacity: 0;
+        }
+        25% {
+          opacity: 0;
+        }
+        80% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
       }
     </style>
   </head>
